@@ -1,0 +1,53 @@
+# Configuration for Oslo (Temperate/Cool/Humid)
+
+climate_name: "oslo"
+
+# Approximate average monthly temperatures (°C) - Refine with real data if possible
+monthly_temps:
+  1: -2.0
+  2: -1.5
+  3: 1.0
+  4: 5.0
+  5: 10.0
+  6: 14.0
+  7: 16.0
+  8: 15.0
+  9: 11.0
+  10: 6.0
+  11: 2.0
+  12: -1.0
+
+# Approximate monthly rain probability (%) - Refine with real data if possible
+# Represents the chance of scheduled rain starting in any given hour
+monthly_rain_prob:
+  1: 50
+  2: 50
+  3: 45
+  4: 40
+  5: 35
+  6: 30
+  7: 30
+  8: 35
+  9: 45
+  10: 50
+  11: 55
+  12: 50
+
+# Default external conditions (can be made dynamic later if needed)
+day_start_hour: 5
+default_outside_rh: 80.0 # Higher humidity typical for Oslo
+
+# Default initial state (used if scenario doesn't override)
+default_init_temp: 18.0
+default_init_rh: 70.0
+default_init_sm: 55.0
+default_init_rain_tank_l: 400.0
+
+# Default target ranges (used if scenario doesn't override)
+# Suitable for cooler climate crops
+default_target_t_c_min: 16.0
+default_target_t_c_max: 20.0
+default_target_rh_min: 65.0
+default_target_rh_max: 75.0
+default_target_sm_min: 50.0
+default_target_sm_max: 65.0

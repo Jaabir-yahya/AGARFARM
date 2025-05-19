@@ -1,0 +1,43 @@
+oslo_normal:
+  W_T_DEV: 1.5
+  W_RH_DEV: 0.8
+  W_SM_DEV: 0.8
+  W_KWH: 0.2
+  W_WATER: 0.05
+  W_IN_BAND_BONUS: 0.1
+  TEMP_BUFFER: 0.2
+  RH_BUFFER: 2.0
+  SM_BUFFER: 2.0
+
+oslo_eco:
+  W_T_DEV: 1.3
+  W_RH_DEV: 0.6
+  W_SM_DEV: 1.2
+  W_KWH: 0.25
+  W_WATER: 0.1
+  W_IN_BAND_BONUS: 0.05
+  TEMP_BUFFER: 0.4
+  RH_BUFFER: 3.0
+  SM_BUFFER: 2.5
+
+riyadh_normal:
+  W_T_DEV: 1.5
+  W_RH_DEV: 0.7
+  W_SM_DEV: 1.0
+  W_KWH: 0.3
+  W_WATER: 0.1
+  W_IN_BAND_BONUS: 0.15
+  TEMP_BUFFER: 0.4
+  RH_BUFFER: 2.5
+  SM_BUFFER: 2.5
+
+riyadh_eco:
+  W_T_DEV: 1.4
+  W_RH_DEV: 0.6
+  W_SM_DEV: 0.9
+  W_KWH: 0.3
+  W_WATER: 0.2
+  W_IN_BAND_BONUS: 0.1
+  TEMP_BUFFER: 0.6
+  RH_BUFFER: 3.5
+  SM_BUFFER: 3.5 

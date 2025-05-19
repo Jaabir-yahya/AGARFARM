@@ -1,0 +1,351 @@
+AGARTECHdiss - Final Project Diagnostics Report
+Report Generated: 2025-05-19 16:33:46
+
+--- ML Model Training File Check ---
+
+Case: Oslo Normal
+  - Model (.zip): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/ppo_agent_o_normal.zip)
+  - Stats (.pkl): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/vecnormalize_o_normal.pkl)
+
+Case: Oslo Eco
+  - Model (.zip): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/ppo_agent_o_eco.zip)
+  - Stats (.pkl): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/vecnormalize_o_eco.pkl)
+
+Case: Riyadh Normal
+  - Model (.zip): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/ppo_agent_r_normal.zip)
+  - Stats (.pkl): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/vecnormalize_r_normal.pkl)
+
+Case: Riyadh Eco
+  - Model (.zip): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/ppo_agent_r_eco.zip)
+  - Stats (.pkl): Found (/Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/evaluation/trained_models/vecnormalize_r_eco.pkl)
+
+Status: All expected model and stats files appear to be present.
+
+
+--- Evaluation Results Summary ---
+
+
+--- Evaluating Scenario: oslo_summer_normal (City: Oslo) ---
+  Status: COMPLETED
+
+  Baseline (Normal Setting) Metrics:
+    mean_t_c: 17.733
+    mean_rh: 85.663
+    mean_sm: 51.358
+    mean_vpd: 0.291
+    pct_time_t_c_out: 17.696
+    pct_time_rh_out: 97.849
+    pct_time_sm_out: 8.675
+    mae_t_c: 0.120
+    mae_rh: 10.724
+    mae_sm: 0.096
+    total_kwh: 22.758
+    total_water_l: 352.000
+    avg_usage_fan: 0.081
+    avg_usage_ac: 0.247
+    avg_usage_vent: 0.079
+    avg_usage_irrigation: 0.539
+
+  ML Normal Metrics:
+    mean_t_c: 16.785
+    mean_rh: 79.864
+    mean_sm: 49.990
+    mean_vpd: 0.386
+    pct_time_t_c_out: 39.972
+    pct_time_rh_out: 99.722
+    pct_time_sm_out: 62.179
+    mae_t_c: 0.408
+    mae_rh: 4.873
+    mae_sm: 0.202
+    total_kwh: 24.498
+    total_water_l: 335.000
+    avg_usage_fan: 0.126
+    avg_usage_ac: 0.230
+    avg_usage_vent: 0.799
+    avg_usage_irrigation: 0.647
+
+  ML Eco Metrics:
+    mean_t_c: 14.759
+    mean_rh: 81.008
+    mean_sm: 41.285
+    mean_vpd: 0.321
+    pct_time_t_c_out: 72.727
+    pct_time_rh_out: 97.641
+    pct_time_sm_out: 97.294
+    mae_t_c: 1.647
+    mae_rh: 6.067
+    mae_sm: 8.781
+    total_kwh: 19.754
+    total_water_l: 212.000
+    avg_usage_fan: 0.401
+    avg_usage_ac: 0.123
+    avg_usage_vent: 0.277
+    avg_usage_irrigation: 0.344
+
+  Resource Savings (vs Baseline Normal):
+    - ML Normal: Energy=-1.74 kWh (-7.6%), Water=17.00 L (4.8%)
+    - ML Eco:    Energy=3.00 kWh (13.2%), Water=140.00 L (39.8%)
+  Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_oslo_oslo_summer_normal.png
+
+
+--- Evaluating Scenario: oslo_winter_heating (City: Oslo) ---
+  Status: COMPLETED
+
+  Baseline (Normal Setting) Metrics:
+    mean_t_c: 15.601
+    mean_rh: 86.045
+    mean_sm: 50.990
+    mean_vpd: 0.248
+    pct_time_t_c_out: 54.337
+    pct_time_rh_out: 97.918
+    pct_time_sm_out: 18.321
+    mae_t_c: 0.896
+    mae_rh: 11.102
+    mae_sm: 0.178
+    total_kwh: 40.525
+    total_water_l: 348.000
+    avg_usage_fan: 0.075
+    avg_usage_ac: 0.597
+    avg_usage_vent: 0.075
+    avg_usage_irrigation: 0.412
+
+  ML Normal Metrics:
+    mean_t_c: 16.324
+    mean_rh: 79.944
+    mean_sm: 49.897
+    mean_vpd: 0.373
+    pct_time_t_c_out: 34.698
+    pct_time_rh_out: 97.294
+    pct_time_sm_out: 67.592
+    mae_t_c: 0.427
+    mae_rh: 5.017
+    mae_sm: 0.241
+    total_kwh: 42.610
+    total_water_l: 334.000
+    avg_usage_fan: 0.000
+    avg_usage_ac: 0.676
+    avg_usage_vent: 0.560
+    avg_usage_irrigation: 0.577
+
+  ML Eco Metrics:
+    mean_t_c: 14.564
+    mean_rh: 81.568
+    mean_sm: 38.203
+    mean_vpd: 0.306
+    pct_time_t_c_out: 73.838
+    pct_time_rh_out: 97.641
+    pct_time_sm_out: 97.294
+    mae_t_c: 1.677
+    mae_rh: 6.628
+    mae_sm: 11.864
+    total_kwh: 30.794
+    total_water_l: 174.000
+    avg_usage_fan: 0.038
+    avg_usage_ac: 0.276
+    avg_usage_vent: 0.219
+    avg_usage_irrigation: 0.312
+
+  Resource Savings (vs Baseline Normal):
+    - ML Normal: Energy=-2.09 kWh (-5.1%), Water=14.00 L (4.0%)
+    - ML Eco:    Energy=9.73 kWh (24.0%), Water=174.00 L (50.0%)
+  Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_oslo_oslo_winter_heating.png
+
+
+--- Evaluating Scenario: riyadh_summer_cooling (City: Riyadh) ---
+  Status: COMPLETED
+
+  Baseline (Normal Setting) Metrics:
+    mean_t_c: 25.951
+    mean_rh: 52.891
+    mean_sm: 24.420
+    mean_vpd: 1.581
+    pct_time_t_c_out: 7.634
+    pct_time_rh_out: 29.424
+    pct_time_sm_out: 74.393
+    mae_t_c: 0.022
+    mae_rh: 0.451
+    mae_sm: 11.103
+    total_kwh: 22.826
+    total_water_l: 49.000
+    avg_usage_fan: 0.047
+    avg_usage_ac: 0.126
+    avg_usage_vent: 0.013
+    avg_usage_irrigation: 0.118
+
+  ML Normal Metrics:
+    mean_t_c: 25.110
+    mean_rh: 45.455
+    mean_sm: 46.869
+    mean_vpd: 1.741
+    pct_time_t_c_out: 1.527
+    pct_time_rh_out: 5.690
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.004
+    mae_rh: 0.046
+    mae_sm: 0.000
+    total_kwh: 44.618
+    total_water_l: 50.000
+    avg_usage_fan: 0.115
+    avg_usage_ac: 0.800
+    avg_usage_vent: 0.047
+    avg_usage_irrigation: 0.553
+
+  ML Eco Metrics:
+    mean_t_c: 26.221
+    mean_rh: 49.703
+    mean_sm: 37.802
+    mean_vpd: 1.716
+    pct_time_t_c_out: 26.440
+    pct_time_rh_out: 12.075
+    pct_time_sm_out: 10.479
+    mae_t_c: 0.452
+    mae_rh: 0.579
+    mae_sm: 0.157
+    total_kwh: 17.643
+    total_water_l: 50.000
+    avg_usage_fan: 0.340
+    avg_usage_ac: 0.200
+    avg_usage_vent: 0.035
+    avg_usage_irrigation: 0.271
+
+  Resource Savings (vs Baseline Normal):
+    - ML Normal: Energy=-21.79 kWh (-95.5%), Water=-1.00 L (-2.0%)
+    - ML Eco:    Energy=5.18 kWh (22.7%), Water=-1.00 L (-2.0%)
+  Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_summer_cooling.png
+
+
+--- Evaluating Scenario: riyadh_winter_normal (City: Riyadh) ---
+  Status: COMPLETED
+
+  Baseline (Normal Setting) Metrics:
+    mean_t_c: 23.749
+    mean_rh: 52.932
+    mean_sm: 36.950
+    mean_vpd: 1.383
+    pct_time_t_c_out: 10.756
+    pct_time_rh_out: 29.979
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.089
+    mae_rh: 0.478
+    mae_sm: 0.000
+    total_kwh: 17.057
+    total_water_l: 211.000
+    avg_usage_fan: 0.023
+    avg_usage_ac: 0.142
+    avg_usage_vent: 0.023
+    avg_usage_irrigation: 0.483
+
+  ML Normal Metrics:
+    mean_t_c: 24.255
+    mean_rh: 46.351
+    mean_sm: 46.404
+    mean_vpd: 1.626
+    pct_time_t_c_out: 4.025
+    pct_time_rh_out: 2.776
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.017
+    mae_rh: 0.013
+    mae_sm: 0.000
+    total_kwh: 47.329
+    total_water_l: 341.000
+    avg_usage_fan: 0.015
+    avg_usage_ac: 0.853
+    avg_usage_vent: 0.042
+    avg_usage_irrigation: 0.550
+
+  ML Eco Metrics:
+    mean_t_c: 21.987
+    mean_rh: 39.973
+    mean_sm: 24.153
+    mean_vpd: 1.595
+    pct_time_t_c_out: 43.373
+    pct_time_rh_out: 53.088
+    pct_time_sm_out: 95.420
+    mae_t_c: 1.143
+    mae_rh: 1.831
+    mae_sm: 10.957
+    total_kwh: 31.011
+    total_water_l: 26.000
+    avg_usage_fan: 0.208
+    avg_usage_ac: 0.496
+    avg_usage_vent: 0.126
+    avg_usage_irrigation: 0.026
+
+  Resource Savings (vs Baseline Normal):
+    - ML Normal: Energy=-30.27 kWh (-177.5%), Water=-130.00 L (-61.6%)
+    - ML Eco:    Energy=-13.95 kWh (-81.8%), Water=185.00 L (87.7%)
+  Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_winter_normal.png
+
+
+--- Evaluating Scenario: riyadh_winter_low_water (City: Riyadh) ---
+  Status: COMPLETED
+
+  Baseline (Normal Setting) Metrics:
+    mean_t_c: 23.703
+    mean_rh: 52.950
+    mean_sm: 36.824
+    mean_vpd: 1.379
+    pct_time_t_c_out: 11.173
+    pct_time_rh_out: 29.146
+    pct_time_sm_out: 3.123
+    mae_t_c: 0.098
+    mae_rh: 0.473
+    mae_sm: 0.040
+    total_kwh: 17.052
+    total_water_l: 209.000
+    avg_usage_fan: 0.023
+    avg_usage_ac: 0.145
+    avg_usage_vent: 0.023
+    avg_usage_irrigation: 0.467
+
+  ML Normal Metrics:
+    mean_t_c: 24.119
+    mean_rh: 46.149
+    mean_sm: 46.571
+    mean_vpd: 1.619
+    pct_time_t_c_out: 7.217
+    pct_time_rh_out: 5.205
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.046
+    mae_rh: 0.064
+    mae_sm: 0.000
+    total_kwh: 45.978
+    total_water_l: 342.000
+    avg_usage_fan: 0.028
+    avg_usage_ac: 0.822
+    avg_usage_vent: 0.046
+    avg_usage_irrigation: 0.553
+
+  ML Eco Metrics:
+    mean_t_c: 22.041
+    mean_rh: 39.718
+    mean_sm: 24.155
+    mean_vpd: 1.605
+    pct_time_t_c_out: 43.511
+    pct_time_rh_out: 56.142
+    pct_time_sm_out: 95.420
+    mae_t_c: 1.092
+    mae_rh: 1.970
+    mae_sm: 10.955
+    total_kwh: 32.594
+    total_water_l: 25.000
+    avg_usage_fan: 0.208
+    avg_usage_ac: 0.517
+    avg_usage_vent: 0.138
+    avg_usage_irrigation: 0.025
+
+  Resource Savings (vs Baseline Normal):
+    - ML Normal: Energy=-28.93 kWh (-169.6%), Water=-133.00 L (-63.6%)
+    - ML Eco:    Energy=-15.54 kWh (-91.1%), Water=184.00 L (88.0%)
+  Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_winter_low_water.png
+
+
+--- Generated Plot Files ---
+- /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_oslo_oslo_summer_normal.png
+- /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_oslo_oslo_winter_heating.png
+- /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_summer_cooling.png
+- /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_winter_normal.png
+- /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_winter_low_water.png
+
+
+--- End of Report ---

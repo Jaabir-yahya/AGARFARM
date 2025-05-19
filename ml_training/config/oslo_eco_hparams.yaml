@@ -1,0 +1,63 @@
+# General PPO parameters
+num_cpu: 8
+training_timesteps: 3000000
+learning_rate: 0.0003
+n_steps: 2048
+batch_size: 64
+n_epochs: 10
+gamma: 0.99
+gae_lambda: 0.95
+clip_range: 0.2
+ent_coef: 0.01
+vf_coef: 0.5
+max_grad_norm: 0.5
+save_freq: 200000 # Adjusted for longer training
+seed: 42
+policy_kwargs:
+  net_arch:
+    pi: [128, 128]
+    vf: [128, 128]
+
+# Environment step duration and episode length
+dt_min: 5
+max_episode_days: 60
+
+# --- Reward Function Parameters ---
+reward_params:
+  # Core Deviation & Resource Penalties
+  W_T_DEV: 1.2      # Reduced to allow more temperature variation
+  W_RH_DEV: 0.6     # Reduced to allow more humidity variation
+  W_SM_DEV: 0.8     # Keep as is
+  W_KWH: 0.4        # Increased to strongly encourage energy savings
+  W_WATER: 0.1      # Increased to encourage water savings
+  W_IN_BAND_BONUS: 0.1 # Keep as is
+
+  # Buffers (leeway before deviation penalty applies)
+  TEMP_BUFFER: 0.5  # Increased to allow more temperature variation
+  RH_BUFFER: 3.0    # Increased to allow more humidity variation
+  SM_BUFFER: 2.0    # Keep as is
+
+  # Penalties for "bad" or conflicting actions
+  W_FIGHT_AC_VENT_COOL: 0.2
+  W_FIGHT_AC_VENT_HEAT: 0.2
+  W_RULE_BREAK: 3.0
+
+  # --- REFINED Reward Weights for Stability & Advanced Guidance ---
+  W_ACTION_CHANGE: 0.1
+
+  # Stability Bonus (for maintaining all targets in band)
+  N_STABILITY_HOURS: 3.0
+  W_STABILITY_BONUS: 20.0
+
+  # Sustained Out-of-Band Penalties
+  N_T_SUSTAINED_HOURS: 1.0
+  W_SUSTAINED_T_OUT: 7.0
+  N_RH_SUSTAINED_HOURS: 1.0
+  W_SUSTAINED_RH_OUT: 5.0
+  N_SM_SUSTAINED_HOURS: 2.0
+  W_SUSTAINED_SM_OUT: 6.0
+
+  # Sensible Action Guidance
+  W_AC_WHEN_COLD_PENALTY: 2.0
+  W_NO_VENT_WHEN_HUMID_DRY_OUTSIDE: 1.0
+  W_SENSIBLE_IRR_HOLD_BONUS: 0.5

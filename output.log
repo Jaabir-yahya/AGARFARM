@@ -1,0 +1,28 @@
+--- AGARTECHdiss Master Pipeline Started ---
+Start Timestamp: 2025-05-07 00:57:32
+
+--- Phase 1: Training ML Models ---
+[TRAINING] Starting: Oslo Normal...
+[TRAINING] Finished: Oslo Normal.
+
+[TRAINING] Starting: Oslo Eco...
+[TRAINING] Finished: Oslo Eco.
+
+[TRAINING] Starting: Riyadh Normal...
+[TRAINING] Finished: Riyadh Normal.
+
+[TRAINING] Starting: Riyadh Eco...
+[TRAINING] Finished: Riyadh Eco.
+
+--- Phase 1: ML Model Training Attempted for all cases ---
+
+--- Phase 2: Generating Final Evaluation Report ---
+WARN: stable-baselines3 or gymnasium not installed. SmartMLAgent cannot load SB3 models.
+--- Phase 2: Final Evaluation Report Generation Attempted ---
+
+--- AGARTECHdiss Master Pipeline Finished ---
+End Timestamp: 2025-05-07 00:57:48
+Total Pipeline Duration: 16 seconds (0 minutes).
+Please check 'final_project_diagnostics.txt' for the summary.
+Check 'figures/' directory for generated plots.
+Check 'logs/ppo_tensorboard/' for TensorBoard logs.

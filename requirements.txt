@@ -1,0 +1,20 @@
+# Core ML & Environment
+gymnasium>=0.26.0
+stable-baselines3[extra]>=2.0.0 # Includes PyTorch/Tensorflow, Tensorboard, etc.
+
+# Data Handling & Simulation
+pandas>=1.5.0
+numpy>=1.21.0
+PyYAML>=6.0
+
+# Plotting & Analysis
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# FastAPI & Server for Deployment
+fastapi>=0.95.0
+uvicorn[standard]>=0.20.0
+python-multipart>=0.0.5
+
+# Add specific versions if needed for reproducibility
+# Example: torch==2.1.0 or tensorflow==2.12.0 (if SB3 doesn't install them via [extra])
