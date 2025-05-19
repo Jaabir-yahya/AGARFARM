@@ -1,5 +1,5 @@
 AGARTECHdiss - Final Project Diagnostics Report
-Report Generated: 2025-05-19 16:33:46
+Report Generated: 2025-05-19 18:55:27
 
 --- ML Model Training File Check ---
 
@@ -29,62 +29,62 @@ Status: All expected model and stats files appear to be present.
   Status: COMPLETED
 
   Baseline (Normal Setting) Metrics:
-    mean_t_c: 17.733
-    mean_rh: 85.663
-    mean_sm: 51.358
-    mean_vpd: 0.291
-    pct_time_t_c_out: 17.696
-    pct_time_rh_out: 97.849
-    pct_time_sm_out: 8.675
-    mae_t_c: 0.120
-    mae_rh: 10.724
-    mae_sm: 0.096
-    total_kwh: 22.758
-    total_water_l: 352.000
-    avg_usage_fan: 0.081
-    avg_usage_ac: 0.247
-    avg_usage_vent: 0.079
-    avg_usage_irrigation: 0.539
+    mean_t_c: 17.717
+    mean_rh: 85.539
+    mean_sm: 51.316
+    mean_vpd: 0.293
+    pct_time_t_c_out: 18.321
+    pct_time_rh_out: 97.710
+    pct_time_sm_out: 9.993
+    mae_t_c: 0.126
+    mae_rh: 10.600
+    mae_sm: 0.114
+    total_kwh: 23.393
+    total_water_l: 354.000
+    avg_usage_fan: 0.082
+    avg_usage_ac: 0.250
+    avg_usage_vent: 0.080
+    avg_usage_irrigation: 0.588
 
   ML Normal Metrics:
-    mean_t_c: 16.785
-    mean_rh: 79.864
-    mean_sm: 49.990
-    mean_vpd: 0.386
-    pct_time_t_c_out: 39.972
-    pct_time_rh_out: 99.722
-    pct_time_sm_out: 62.179
-    mae_t_c: 0.408
-    mae_rh: 4.873
-    mae_sm: 0.202
-    total_kwh: 24.498
-    total_water_l: 335.000
-    avg_usage_fan: 0.126
-    avg_usage_ac: 0.230
-    avg_usage_vent: 0.799
-    avg_usage_irrigation: 0.647
+    mean_t_c: 17.341
+    mean_rh: 79.403
+    mean_sm: 49.761
+    mean_vpd: 0.410
+    pct_time_t_c_out: 35.600
+    pct_time_rh_out: 96.322
+    pct_time_sm_out: 73.976
+    mae_t_c: 0.355
+    mae_rh: 4.511
+    mae_sm: 0.360
+    total_kwh: 33.300
+    total_water_l: 333.000
+    avg_usage_fan: 0.028
+    avg_usage_ac: 0.403
+    avg_usage_vent: 0.792
+    avg_usage_irrigation: 0.544
 
   ML Eco Metrics:
-    mean_t_c: 14.759
-    mean_rh: 81.008
-    mean_sm: 41.285
-    mean_vpd: 0.321
-    pct_time_t_c_out: 72.727
-    pct_time_rh_out: 97.641
-    pct_time_sm_out: 97.294
-    mae_t_c: 1.647
-    mae_rh: 6.067
-    mae_sm: 8.781
-    total_kwh: 19.754
-    total_water_l: 212.000
-    avg_usage_fan: 0.401
-    avg_usage_ac: 0.123
-    avg_usage_vent: 0.277
-    avg_usage_irrigation: 0.344
+    mean_t_c: 17.319
+    mean_rh: 79.613
+    mean_sm: 49.918
+    mean_vpd: 0.404
+    pct_time_t_c_out: 28.799
+    pct_time_rh_out: 97.918
+    pct_time_sm_out: 61.485
+    mae_t_c: 0.245
+    mae_rh: 4.683
+    mae_sm: 0.274
+    total_kwh: 23.448
+    total_water_l: 334.000
+    avg_usage_fan: 0.013
+    avg_usage_ac: 0.245
+    avg_usage_vent: 0.792
+    avg_usage_irrigation: 0.520
 
   Resource Savings (vs Baseline Normal):
-    - ML Normal: Energy=-1.74 kWh (-7.6%), Water=17.00 L (4.8%)
-    - ML Eco:    Energy=3.00 kWh (13.2%), Water=140.00 L (39.8%)
+    - ML Normal: Energy=-9.91 kWh (-42.3%), Water=21.00 L (5.9%)
+    - ML Eco:    Energy=-0.05 kWh (-0.2%), Water=20.00 L (5.6%)
   Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_oslo_oslo_summer_normal.png
 
 
@@ -92,62 +92,62 @@ Status: All expected model and stats files appear to be present.
   Status: COMPLETED
 
   Baseline (Normal Setting) Metrics:
-    mean_t_c: 15.601
-    mean_rh: 86.045
-    mean_sm: 50.990
-    mean_vpd: 0.248
-    pct_time_t_c_out: 54.337
+    mean_t_c: 15.699
+    mean_rh: 86.056
+    mean_sm: 50.303
+    mean_vpd: 0.249
+    pct_time_t_c_out: 53.158
     pct_time_rh_out: 97.918
-    pct_time_sm_out: 18.321
-    mae_t_c: 0.896
-    mae_rh: 11.102
-    mae_sm: 0.178
-    total_kwh: 40.525
-    total_water_l: 348.000
-    avg_usage_fan: 0.075
-    avg_usage_ac: 0.597
-    avg_usage_vent: 0.075
-    avg_usage_irrigation: 0.412
+    pct_time_sm_out: 34.004
+    mae_t_c: 0.823
+    mae_rh: 11.111
+    mae_sm: 0.627
+    total_kwh: 40.415
+    total_water_l: 343.000
+    avg_usage_fan: 0.074
+    avg_usage_ac: 0.585
+    avg_usage_vent: 0.074
+    avg_usage_irrigation: 0.392
 
   ML Normal Metrics:
-    mean_t_c: 16.324
-    mean_rh: 79.944
-    mean_sm: 49.897
-    mean_vpd: 0.373
-    pct_time_t_c_out: 34.698
-    pct_time_rh_out: 97.294
-    pct_time_sm_out: 67.592
-    mae_t_c: 0.427
-    mae_rh: 5.017
-    mae_sm: 0.241
-    total_kwh: 42.610
-    total_water_l: 334.000
-    avg_usage_fan: 0.000
-    avg_usage_ac: 0.676
-    avg_usage_vent: 0.560
-    avg_usage_irrigation: 0.577
+    mean_t_c: 16.068
+    mean_rh: 79.895
+    mean_sm: 49.788
+    mean_vpd: 0.368
+    pct_time_t_c_out: 41.638
+    pct_time_rh_out: 97.085
+    pct_time_sm_out: 77.238
+    mae_t_c: 0.552
+    mae_rh: 4.968
+    mae_sm: 0.315
+    total_kwh: 42.356
+    total_water_l: 333.000
+    avg_usage_fan: 0.022
+    avg_usage_ac: 0.731
+    avg_usage_vent: 0.576
+    avg_usage_irrigation: 0.547
 
   ML Eco Metrics:
-    mean_t_c: 14.564
-    mean_rh: 81.568
-    mean_sm: 38.203
-    mean_vpd: 0.306
-    pct_time_t_c_out: 73.838
-    pct_time_rh_out: 97.641
-    pct_time_sm_out: 97.294
-    mae_t_c: 1.677
-    mae_rh: 6.628
-    mae_sm: 11.864
-    total_kwh: 30.794
-    total_water_l: 174.000
-    avg_usage_fan: 0.038
-    avg_usage_ac: 0.276
-    avg_usage_vent: 0.219
-    avg_usage_irrigation: 0.312
+    mean_t_c: 16.303
+    mean_rh: 80.149
+    mean_sm: 49.978
+    mean_vpd: 0.368
+    pct_time_t_c_out: 33.657
+    pct_time_rh_out: 98.265
+    pct_time_sm_out: 59.195
+    mae_t_c: 0.455
+    mae_rh: 5.204
+    mae_sm: 0.203
+    total_kwh: 44.038
+    total_water_l: 335.000
+    avg_usage_fan: 0.035
+    avg_usage_ac: 0.735
+    avg_usage_vent: 0.540
+    avg_usage_irrigation: 0.517
 
   Resource Savings (vs Baseline Normal):
-    - ML Normal: Energy=-2.09 kWh (-5.1%), Water=14.00 L (4.0%)
-    - ML Eco:    Energy=9.73 kWh (24.0%), Water=174.00 L (50.0%)
+    - ML Normal: Energy=-1.94 kWh (-4.8%), Water=10.00 L (2.9%)
+    - ML Eco:    Energy=-3.62 kWh (-9.0%), Water=8.00 L (2.3%)
   Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_oslo_oslo_winter_heating.png
 
 
@@ -173,44 +173,44 @@ Status: All expected model and stats files appear to be present.
     avg_usage_irrigation: 0.118
 
   ML Normal Metrics:
-    mean_t_c: 25.110
-    mean_rh: 45.455
-    mean_sm: 46.869
-    mean_vpd: 1.741
-    pct_time_t_c_out: 1.527
-    pct_time_rh_out: 5.690
-    pct_time_sm_out: 0.000
-    mae_t_c: 0.004
-    mae_rh: 0.046
+    mean_t_c: 24.977
+    mean_rh: 45.383
+    mean_sm: 36.752
+    mean_vpd: 1.731
+    pct_time_t_c_out: 2.845
+    pct_time_rh_out: 1.527
+    pct_time_sm_out: 0.139
+    mae_t_c: 0.007
+    mae_rh: 0.007
     mae_sm: 0.000
-    total_kwh: 44.618
+    total_kwh: 37.773
     total_water_l: 50.000
-    avg_usage_fan: 0.115
-    avg_usage_ac: 0.800
-    avg_usage_vent: 0.047
-    avg_usage_irrigation: 0.553
+    avg_usage_fan: 0.433
+    avg_usage_ac: 0.613
+    avg_usage_vent: 0.044
+    avg_usage_irrigation: 0.353
 
   ML Eco Metrics:
-    mean_t_c: 26.221
-    mean_rh: 49.703
-    mean_sm: 37.802
-    mean_vpd: 1.716
-    pct_time_t_c_out: 26.440
-    pct_time_rh_out: 12.075
-    pct_time_sm_out: 10.479
-    mae_t_c: 0.452
-    mae_rh: 0.579
-    mae_sm: 0.157
-    total_kwh: 17.643
+    mean_t_c: 25.096
+    mean_rh: 44.216
+    mean_sm: 47.377
+    mean_vpd: 1.779
+    pct_time_t_c_out: 2.984
+    pct_time_rh_out: 7.009
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.012
+    mae_rh: 0.047
+    mae_sm: 0.000
+    total_kwh: 39.283
     total_water_l: 50.000
-    avg_usage_fan: 0.340
-    avg_usage_ac: 0.200
-    avg_usage_vent: 0.035
-    avg_usage_irrigation: 0.271
+    avg_usage_fan: 0.285
+    avg_usage_ac: 0.659
+    avg_usage_vent: 0.061
+    avg_usage_irrigation: 0.593
 
   Resource Savings (vs Baseline Normal):
-    - ML Normal: Energy=-21.79 kWh (-95.5%), Water=-1.00 L (-2.0%)
-    - ML Eco:    Energy=5.18 kWh (22.7%), Water=-1.00 L (-2.0%)
+    - ML Normal: Energy=-14.95 kWh (-65.5%), Water=-1.00 L (-2.0%)
+    - ML Eco:    Energy=-16.46 kWh (-72.1%), Water=-1.00 L (-2.0%)
   Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_summer_cooling.png
 
 
@@ -218,62 +218,62 @@ Status: All expected model and stats files appear to be present.
   Status: COMPLETED
 
   Baseline (Normal Setting) Metrics:
-    mean_t_c: 23.749
-    mean_rh: 52.932
-    mean_sm: 36.950
+    mean_t_c: 23.721
+    mean_rh: 52.871
+    mean_sm: 36.945
     mean_vpd: 1.383
-    pct_time_t_c_out: 10.756
-    pct_time_rh_out: 29.979
+    pct_time_t_c_out: 10.409
+    pct_time_rh_out: 28.799
     pct_time_sm_out: 0.000
-    mae_t_c: 0.089
-    mae_rh: 0.478
+    mae_t_c: 0.073
+    mae_rh: 0.481
     mae_sm: 0.000
-    total_kwh: 17.057
-    total_water_l: 211.000
+    total_kwh: 17.280
+    total_water_l: 210.000
     avg_usage_fan: 0.023
     avg_usage_ac: 0.142
     avg_usage_vent: 0.023
-    avg_usage_irrigation: 0.483
+    avg_usage_irrigation: 0.499
 
   ML Normal Metrics:
-    mean_t_c: 24.255
-    mean_rh: 46.351
-    mean_sm: 46.404
-    mean_vpd: 1.626
-    pct_time_t_c_out: 4.025
-    pct_time_rh_out: 2.776
+    mean_t_c: 24.164
+    mean_rh: 43.819
+    mean_sm: 38.937
+    mean_vpd: 1.694
+    pct_time_t_c_out: 6.176
+    pct_time_rh_out: 5.552
     pct_time_sm_out: 0.000
-    mae_t_c: 0.017
-    mae_rh: 0.013
+    mae_t_c: 0.037
+    mae_rh: 0.043
     mae_sm: 0.000
-    total_kwh: 47.329
-    total_water_l: 341.000
-    avg_usage_fan: 0.015
-    avg_usage_ac: 0.853
-    avg_usage_vent: 0.042
-    avg_usage_irrigation: 0.550
+    total_kwh: 42.578
+    total_water_l: 240.000
+    avg_usage_fan: 0.246
+    avg_usage_ac: 0.733
+    avg_usage_vent: 0.056
+    avg_usage_irrigation: 0.287
 
   ML Eco Metrics:
-    mean_t_c: 21.987
-    mean_rh: 39.973
-    mean_sm: 24.153
-    mean_vpd: 1.595
-    pct_time_t_c_out: 43.373
-    pct_time_rh_out: 53.088
-    pct_time_sm_out: 95.420
-    mae_t_c: 1.143
-    mae_rh: 1.831
-    mae_sm: 10.957
-    total_kwh: 31.011
-    total_water_l: 26.000
-    avg_usage_fan: 0.208
-    avg_usage_ac: 0.496
-    avg_usage_vent: 0.126
-    avg_usage_irrigation: 0.026
+    mean_t_c: 24.201
+    mean_rh: 45.045
+    mean_sm: 47.958
+    mean_vpd: 1.661
+    pct_time_t_c_out: 4.650
+    pct_time_rh_out: 3.400
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.024
+    mae_rh: 0.017
+    mae_sm: 0.000
+    total_kwh: 47.068
+    total_water_l: 361.000
+    avg_usage_fan: 0.114
+    avg_usage_ac: 0.831
+    avg_usage_vent: 0.055
+    avg_usage_irrigation: 0.617
 
   Resource Savings (vs Baseline Normal):
-    - ML Normal: Energy=-30.27 kWh (-177.5%), Water=-130.00 L (-61.6%)
-    - ML Eco:    Energy=-13.95 kWh (-81.8%), Water=185.00 L (87.7%)
+    - ML Normal: Energy=-25.30 kWh (-146.4%), Water=-30.00 L (-14.3%)
+    - ML Eco:    Energy=-29.79 kWh (-172.4%), Water=-151.00 L (-71.9%)
   Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_winter_normal.png
 
 
@@ -281,62 +281,62 @@ Status: All expected model and stats files appear to be present.
   Status: COMPLETED
 
   Baseline (Normal Setting) Metrics:
-    mean_t_c: 23.703
-    mean_rh: 52.950
-    mean_sm: 36.824
-    mean_vpd: 1.379
-    pct_time_t_c_out: 11.173
-    pct_time_rh_out: 29.146
-    pct_time_sm_out: 3.123
-    mae_t_c: 0.098
-    mae_rh: 0.473
-    mae_sm: 0.040
-    total_kwh: 17.052
-    total_water_l: 209.000
+    mean_t_c: 23.721
+    mean_rh: 52.871
+    mean_sm: 36.945
+    mean_vpd: 1.383
+    pct_time_t_c_out: 10.409
+    pct_time_rh_out: 28.799
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.073
+    mae_rh: 0.481
+    mae_sm: 0.000
+    total_kwh: 17.280
+    total_water_l: 210.000
     avg_usage_fan: 0.023
-    avg_usage_ac: 0.145
+    avg_usage_ac: 0.142
     avg_usage_vent: 0.023
-    avg_usage_irrigation: 0.467
+    avg_usage_irrigation: 0.499
 
   ML Normal Metrics:
-    mean_t_c: 24.119
-    mean_rh: 46.149
-    mean_sm: 46.571
-    mean_vpd: 1.619
-    pct_time_t_c_out: 7.217
-    pct_time_rh_out: 5.205
+    mean_t_c: 24.160
+    mean_rh: 44.161
+    mean_sm: 38.422
+    mean_vpd: 1.684
+    pct_time_t_c_out: 6.731
+    pct_time_rh_out: 2.359
     pct_time_sm_out: 0.000
-    mae_t_c: 0.046
-    mae_rh: 0.064
+    mae_t_c: 0.042
+    mae_rh: 0.017
     mae_sm: 0.000
-    total_kwh: 45.978
-    total_water_l: 342.000
-    avg_usage_fan: 0.028
-    avg_usage_ac: 0.822
-    avg_usage_vent: 0.046
-    avg_usage_irrigation: 0.553
+    total_kwh: 42.797
+    total_water_l: 233.000
+    avg_usage_fan: 0.271
+    avg_usage_ac: 0.742
+    avg_usage_vent: 0.052
+    avg_usage_irrigation: 0.311
 
   ML Eco Metrics:
-    mean_t_c: 22.041
-    mean_rh: 39.718
-    mean_sm: 24.155
-    mean_vpd: 1.605
-    pct_time_t_c_out: 43.511
-    pct_time_rh_out: 56.142
-    pct_time_sm_out: 95.420
-    mae_t_c: 1.092
-    mae_rh: 1.970
-    mae_sm: 10.955
-    total_kwh: 32.594
-    total_water_l: 25.000
-    avg_usage_fan: 0.208
-    avg_usage_ac: 0.517
-    avg_usage_vent: 0.138
-    avg_usage_irrigation: 0.025
+    mean_t_c: 24.261
+    mean_rh: 44.963
+    mean_sm: 47.654
+    mean_vpd: 1.669
+    pct_time_t_c_out: 4.511
+    pct_time_rh_out: 4.372
+    pct_time_sm_out: 0.000
+    mae_t_c: 0.024
+    mae_rh: 0.057
+    mae_sm: 0.000
+    total_kwh: 46.763
+    total_water_l: 359.000
+    avg_usage_fan: 0.101
+    avg_usage_ac: 0.830
+    avg_usage_vent: 0.054
+    avg_usage_irrigation: 0.617
 
   Resource Savings (vs Baseline Normal):
-    - ML Normal: Energy=-28.93 kWh (-169.6%), Water=-133.00 L (-63.6%)
-    - ML Eco:    Energy=-15.54 kWh (-91.1%), Water=184.00 L (88.0%)
+    - ML Normal: Energy=-25.52 kWh (-147.7%), Water=-23.00 L (-11.0%)
+    - ML Eco:    Energy=-29.48 kWh (-170.6%), Water=-149.00 L (-71.0%)
   Plot Generated: /Users/jaabirahmed/Documents/synoptic-AGARFARM/AGARFARM/figures/comparison_riyadh_riyadh_winter_low_water.png
 
 

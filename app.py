@@ -197,12 +197,13 @@ ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://kzmkgaq2z64wzepycz0n.lite.vusercontent.net",
-    "https://agarfarm-api.onrender.com"
+    "https://agarfarm-api.onrender.com",
+    "https://agarfarm.onrender.com"  # Add your frontend Render URL
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=ALLOWED_ORIGINS,  # Use the list instead of "*"
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
